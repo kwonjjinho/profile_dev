@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1a1c1b", "tertiary-fixed": "#e3e2e2", "surface-variant": "#e2e3e1", "on-background": "#1a1c1b", "secondary": "#0051d5", "surface-container": "#eeeeec", "tertiary": "#000000", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#464747", "on-primary-container": "#858383", "surface-container-highest": "#e2e3e1", "tertiary-container": "#1b1c1c", "primary-fixed-dim": "#c8c6c5", "surface-tint": "#5f5e5e", "secondary-container": "#316bf3", "secondary-fixed": "#dbe1ff", "on-primary-fixed": "#1c1b1b", "surface-bright": "#f9f9f7", "on-primary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "inverse-surface": "#2f3130", "on-tertiary": "#ffffff", "outline": "#747878", "primary-container": "#1c1b1b", "on-tertiary-fixed": "#1b1c1c", "on-secondary-fixed": "#00174b", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#c7c6c6", "on-secondary": "#ffffff", "inverse-on-surface": "#f1f1ef", "on-secondary-fixed-variant": "#003ea8", "on-tertiary-container": "#848484", "inverse-primary": "#c8c6c5", "surface-container-low": "#f4f4f2", "surface-dim": "#dadad8", "primary-fixed": "#e5e2e1", "background": "#f9f9f7", "on-secondary-container": "#fefcff", "outline-variant": "#c4c7c7", "surface-container-high": "#e8e8e6", "secondary-fixed-dim": "#b4c5ff", "surface": "#f9f9f7", "on-primary-fixed-variant": "#474746", "on-surface-variant": "#444748", "primary": "#000000" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "6rem", "space-2xl": "4rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "3rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem" }, "fontFamily": { "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "label-mono": [ "JetBrains Mono" ], "headline-sm": [ "Geist" ], "display": [ "Geist" ], "headline-lg-mobile": [ "Geist" ], "body-md": [ "Inter" ], "display-mobile": [ "Geist" ], "label-mono-xs": [ "JetBrains Mono" ], "headline-md": [ "Geist" ], "headline-lg": [ "Geist" ], "code-inline": [ "JetBrains Mono" ] }, "fontSize": { "body-lg": [ "1.125rem", { "lineHeight": "1.65", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" } ], "label-mono": [ "0.75rem", { "lineHeight": "1.2", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "display": [ "3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.035em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-mobile": [ "2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "label-mono-xs": [ "0.6875rem", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "400" } ], "headline-md": [ "1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "headline-lg": [ "2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "500" } ], "code-inline": [ "0.8125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 max-w-[1120px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs font-label-mono text-label-mono text-on-surface tracking-wider uppercase hover:text-secondary transition-colors" data-path="overview" href="#"><span class="font-semibold">KJ</span><span class="text-outline">/</span><span>2026</span></a><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest rounded-lg border border-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-mono-xs text-label-mono-xs uppercase tracking-wider text-on-surface-variant">AVAILABLE FOR HIRE</span></div></div><nav class="hidden xl:flex items-center gap-space-lg font-label-mono text-label-mono-xs tracking-wider" data-active-classes="text-on-surface font-medium underline underline-offset-8 decoration-secondary"><a aria-current="page" class="transition-colors text-on-surface font-medium underline underline-offset-8 decoration-secondary" data-path="overview" href="#">01 CARD</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="resume" href="#">02 RESUME</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">03 PROJECTS</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="metrics" href="#">04 METRICS</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#">05 EXPERIENCE</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">06 CONTACT</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="hidden 2xl:flex fixed right-8 top-1/2 -translate-y-1/2 z-40 flex-col gap-space-md font-label-mono-xs text-label-mono-xs tracking-wider"><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="overview" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">01 INTRO</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="resume" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">02 RESUME</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="projects" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">03 PROJECTS</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="metrics" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">04 METRICS</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="experience" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">05 EXPERIENCE</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a><a class="group flex items-center gap-space-sm justify-end text-on-surface-variant hover:text-secondary transition-colors" data-path="contact" href="#"><span class="opacity-0 group-hover:opacity-100 transition-opacity">06 CONTACT</span><span class="w-4 h-px bg-outline-variant group-hover:w-8 group-hover:bg-secondary transition-all"></span></a></aside><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin"><div class="flex flex-col w-full relative selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- BACKGROUND PAPER TEXTURE & AMBIENT DEPTH -->
+<div class="absolute inset-0 pointer-events-none opacity-[0.035] mix-blend-multiply bg-[radial-gradient(#1a1c1b_1px,transparent_1px)] [background-size:18px_18px] z-0"></div>
+<!-- SECTION 01: HERO / 3D BUSINESS CARD (CARD VIEW) -->
+<section class="relative z-10 w-full min-h-[calc(100vh-4rem)] flex flex-col justify-center items-center py-space-xl px-margin-mobile lg:px-margin" id="card-hero">
+<!-- Meta status label above card -->
+<div class="flex items-center gap-space-sm mb-space-lg text-on-surface-variant font-label-mono-xs text-label-mono-xs tracking-widest uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-ping"></span>
+<span>SYSTEM CHASSIS V4.2 • PERSPECTIVE CARD VIEW</span>
+</div>
+<!-- 3D Card Parent Container with Perspective -->
+<div class="w-full max-w-[680px] [perspective:1400px] cursor-grab active:cursor-grabbing transition-transform duration-200 ease-out" id="card-tilt-container">
+<!-- The Business Card (Golden Stationery Metaphor 1.75:1) -->
+<div class="relative w-full aspect-[1.75/1] bg-surface-container-lowest rounded-DEFAULT shadow-[0_20px_50px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] p-space-lg sm:p-space-xl flex flex-col justify-between overflow-hidden transition-all duration-300" id="interactive-card">
+<!-- Specular Glare Sheen -->
+<div class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-300 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.85),transparent_65%)]" id="card-sheen"></div>
+<!-- Architectural Grid Submark (Bottom right corner watermark) -->
+<div class="absolute -right-8 -bottom-10 pointer-events-none opacity-[0.03] select-none text-[180px] font-display font-semibold">KJ</div>
+<!-- Card Header: Title & Architecture Stack -->
+<div class="flex justify-between items-start gap-space-md z-10">
+<div>
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-secondary tracking-widest uppercase font-semibold">
+<span>LEAD BACKEND SPECIALIST</span>
+<span>/</span>
+<span>KR</span>
+</div>
+<h1 class="font-display text-display sm:text-[3rem] text-on-surface leading-tight font-semibold tracking-tight mt-space-xs">
+              KWON JINHO
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs tracking-tight">
+              안정적인 서비스를 구축하는 엔지니어
+            </p>
+</div>
+<!-- Technical Tag Matrix -->
+<div class="hidden sm:flex flex-col items-end gap-space-xs text-right">
+<span class="font-label-mono-xs text-label-mono-xs text-on-surface-variant uppercase tracking-wider font-semibold">PRIMARY ARTIFACTS</span>
+<div class="flex flex-wrap justify-end gap-1.5 max-w-[210px] mt-1">
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">JAVA 17/21</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">SPRING BOOT</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">MYSQL 8</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">REDIS</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">AWS</span>
+</div>
+</div>
+</div>
+<!-- Card Center Structural Spec -->
+<div class="z-10 py-space-xs border-y border-surface-variant/70 flex items-center justify-between font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface font-medium">SYSTEMS</span>
+<span class="text-outline-variant">|</span>
+<span>HIGH CONCURRENCY • FAULT TOLERANCE</span>
+</div>
+<div class="font-code-inline text-code-inline text-secondary font-medium">
+            37.5665° N, 126.9780° E
+          </div>
+</div>
+<!-- Card Footer: Fast Links & Sign-off -->
+<div class="flex justify-between items-end z-10">
+<div class="flex items-center gap-space-md font-label-mono-xs text-label-mono-xs">
+<a class="group flex items-center gap-1 text-on-surface hover:text-secondary transition-colors" href="https://github.com" rel="noreferrer" target="_blank">
+<span>GITHUB</span>
+<span class="material-symbols-outlined text-[13px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+<span class="text-surface-variant font-light">•</span>
+<a class="group flex items-center gap-1 text-on-surface hover:text-secondary transition-colors" href="mailto:jinho.kwon.dev@gmail.com">
+<span>EMAIL</span>
+<span class="material-symbols-outlined text-[13px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span>
+</a>
+<span class="text-surface-variant font-light">•</span>
+<a class="group flex items-center gap-1 text-secondary font-semibold hover:underline" href="#resume">
+<span>RESUME</span>
+<span class="material-symbols-outlined text-[13px]">arrow_downward</span>
+</a>
+</div>
+<div class="font-label-mono-xs text-label-mono-xs text-outline tracking-widest uppercase">
+            SPEC NO. 2026-KJ
+          </div>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator / Transition cue -->
+<a class="mt-space-2xl group flex flex-col items-center gap-space-xs text-on-surface-variant hover:text-secondary transition-colors" href="#resume">
+<span class="font-label-mono-xs text-label-mono-xs tracking-widest uppercase">SCROLL TO EXPAND • FROM CARD TO RESUME</span>
+<div class="w-px h-8 bg-surface-variant group-hover:bg-secondary group-hover:h-12 transition-all duration-300 relative overflow-hidden">
+<div class="w-full h-1/2 bg-secondary animate-bounce"></div>
+</div>
+</a>
+</section>
+<!-- SECTION 02: RESUME DOCUMENT (DOCUMENT 01 — RESUME) -->
+<section class="relative z-10 w-full py-space-2xl flex flex-col items-center" id="resume">
+<!-- Outer Sheet Container: Engineered Swiss Stationery Document -->
+<article class="w-full max-w-[880px] bg-surface-container-lowest shadow-[0_2px_12px_rgba(0,0,0,0.04),0_16px_40px_rgba(0,0,0,0.03)] rounded-DEFAULT p-space-lg sm:p-space-2xl relative">
+<!-- Document Archival Header Stamp -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md border-b border-surface-variant gap-space-xs font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 bg-surface-container text-on-surface font-semibold rounded">DOC_01</span>
+<span class="font-semibold text-on-surface">RESUME // ARCHITECTURAL DOSSIER</span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span>LAST_REVISED: 2026.03</span>
+<span>•</span>
+<span class="text-secondary font-medium tracking-wide">STATUS: ACTIVE VERIFIED</span>
+</div>
+</div>
+<!-- Profile & Header Identification -->
+<header class="py-space-xl border-b border-surface-variant flex flex-col md:flex-row justify-between items-start md:items-end gap-space-lg">
+<div>
+<span class="font-label-mono-xs text-label-mono-xs uppercase tracking-widest text-secondary font-semibold">ENGINEERING ARCHITECT PROFILE</span>
+<h2 class="font-headline-lg text-headline-lg sm:text-[2.75rem] text-on-surface font-semibold tracking-tight mt-space-xs">
+            권진호 <span class="font-normal text-on-surface-variant text-headline-md sm:text-headline-lg">/ Kwon Jinho</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface mt-1 font-medium">
+            Backend Systems &amp; Distributed Infrastructure Specialist
+          </p>
+</div>
+<!-- Contact Dossier Details -->
+<div class="grid grid-cols-2 gap-x-space-lg gap-y-space-xs font-label-mono-xs text-label-mono-xs bg-surface-container-low p-space-md rounded-lg w-full md:w-auto">
+<div class="text-on-surface-variant">LOCATION</div>
+<div class="text-on-surface font-medium text-right">Seoul / Busan, KR</div>
+<div class="text-on-surface-variant">EMAIL</div>
+<div class="text-on-surface font-medium text-right"><a class="hover:text-secondary underline decoration-surface-variant" href="mailto:jinho.kwon.dev@gmail.com">jinho.kwon.dev@gmail.com</a></div>
+<div class="text-on-surface-variant">GITHUB</div>
+<div class="text-on-surface font-medium text-right"><a class="hover:text-secondary underline decoration-surface-variant" href="https://github.com" rel="noreferrer" target="_blank">github.com/kwonjinho</a></div>
+<div class="text-on-surface-variant">DISCIPLINE</div>
+<div class="text-secondary font-medium text-right">High-Throughput / Concurrency</div>
+</div>
+</header>
+<!-- About Me: Rigorous Narrative Section -->
+<div class="py-space-xl border-b border-surface-variant">
+<h3 class="font-label-mono-xs text-label-mono-xs uppercase tracking-widest text-on-surface-variant mb-space-md flex items-center gap-space-xs">
+<span>01</span>
+<span>—</span>
+<span>EXECUTIVE SUMMARY &amp; PHILOSOPHY</span>
+</h3>
+<p class="font-headline-sm text-headline-sm text-on-surface font-medium mb-space-sm leading-snug">
+          “사용자의 체감 병목을 수학적으로 해결하고, 장애 격리와 회복 탄력성을 지닌 백엔드 시스템을 설계합니다.”
+        </p>
+<div class="grid md:grid-cols-2 gap-space-lg font-body-md text-body-md text-on-surface-variant mt-space-md">
+<p>
+            대규모 트래픽 인입 상황에서의 동시성 이슈, 데이터 무결성 보장, 그리고 분산 트랜잭션 오케스트레이션에 깊은 관심을 둡니다. 데이터베이스 인덱싱 체계와 캐싱 전략을 다각도로 최적화하여 불필요한 시스템 리소스 낭비를 줄이고, 측정 가능한 지표(Latency, Throughput, TPS)로 성능 개선을 증명합니다.
+          </p>
+<p>
+            단순히 프레임워크 기능 구현에 머무르지 않고, JVM 메모리 모델, OS 레벨의 I/O 블로킹 메커니즘, 분산 환경에서의 네트워크 레이턴시와 파티션 내성을 항상 계산하며 견고한 소프트웨어를 프로덕션 레벨로 만듭니다.
+          </p>
+</div>
+</div>
+<!-- Technical Skills: Rigorous Clean Data Table -->
+<div class="py-space-xl border-b border-surface-variant">
+<h3 class="font-label-mono-xs text-label-mono-xs uppercase tracking-widest text-on-surface-variant mb-space-md flex items-center gap-space-xs">
+<span>02</span>
+<span>—</span>
+<span>TECHNICAL COMPETENCIES // ARTIFACT MATRIX</span>
+</h3>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="border-b border-surface-variant font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<th class="py-space-sm px-space-sm w-36 uppercase tracking-wider">DOMAIN</th>
+<th class="py-space-sm px-space-sm uppercase tracking-wider">PRIMARY STACK &amp; METHODOLOGY</th>
+<th class="py-space-sm px-space-sm w-44 uppercase tracking-wider text-right">SYSTEM LEVEL</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-secondary font-medium">BACKEND CORE</td>
+<td class="py-space-sm px-space-sm text-on-surface font-body-md">
+<div class="font-medium text-on-surface">Java 17 / 21, Spring Boot 3.x, Spring Data JPA, Spring Security, QueryDSL</div>
+<div class="text-on-surface-variant font-body-sm text-xs mt-0.5">멀티스레드 동시성 제어, JPA N+1 방지 지연 로딩 설계, 도메인 주도 설계(DDD)</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-right text-on-surface-variant">CORE PROFICIENT</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-secondary font-medium">DATA PERSISTENCE</td>
+<td class="py-space-sm px-space-sm text-on-surface font-body-md">
+<div class="font-medium text-on-surface">MySQL 8.0, Redis (Distributed Lock &amp; Multi-tier Cache)</div>
+<div class="text-on-surface-variant font-body-sm text-xs mt-0.5">B-Tree 복합 인덱스 튜닝, 격리 수준(Isolation Level) 제어, Redisson 기반 스핀락 부하 감소</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-right text-on-surface-variant">HIGH VOLUME</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-secondary font-medium">MESSAGING &amp; CLOUD</td>
+<td class="py-space-sm px-space-sm text-on-surface font-body-md">
+<div class="font-medium text-on-surface">Apache Kafka, AWS (EC2, S3, RDS Aurora), Docker, GitHub Actions, Nginx</div>
+<div class="text-on-surface-variant font-body-sm text-xs mt-0.5">무중단 블루/그린 배포 파이프라인, 비동기 이벤트 스트리밍, VPC 서브넷 분리 구성</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-right text-on-surface-variant">PRODUCTION</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-secondary font-medium">OBSERVABILITY</td>
+<td class="py-space-sm px-space-sm text-on-surface font-body-md">
+<div class="font-medium text-on-surface">Prometheus, Grafana, Apache JMeter, Elastic Stack, Pinpoint</div>
+<div class="text-on-surface-variant font-body-sm text-xs mt-0.5">부하 테스트 시나리오 스트레스 측정, JVM 힙 덤프 및 스레드 덤프 병목 추적</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-right text-on-surface-variant">ANALYTICAL</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-secondary font-medium">FRONTEND SUBSIDIARY</td>
+<td class="py-space-sm px-space-sm text-on-surface font-body-md">
+<div class="font-medium text-on-surface">TypeScript, React, Tailwind CSS</div>
+<div class="text-on-surface-variant font-body-sm text-xs mt-0.5">RESTful 명세 기반 프론트엔드-백엔드 인터페이스 규격 합의 및 통합 QA</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-mono-xs text-label-mono-xs text-right text-on-surface-variant">COLLABORATIVE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Quick Document Download Stamp -->
+<div class="pt-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>OFFICIAL WHITE PAPER VERIFIED BY KWON JINHO</span>
+</div>
+<a class="px-space-md py-space-xs bg-primary text-on-primary rounded font-label-mono-xs text-label-mono-xs font-medium hover:bg-neutral-800 transition-colors flex items-center gap-space-xs" href="#contact">
+<span>REQUEST FULL OFFICIAL DOSSIER</span>
+<span class="material-symbols-outlined text-[14px]">download</span>
+</a>
+</div>
+</article>
+</section>
+<!-- SECTION 03: PROJECT CASE STUDIES (PROJECT DOCUMENT / 001 & 002) -->
+<section class="relative z-10 w-full py-space-3xl flex flex-col items-center" id="projects">
+<div class="w-full max-w-[880px] mb-space-xl flex flex-col items-start">
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-secondary font-semibold uppercase tracking-widest">
+<span>ENGINEERING CASE STUDIES</span>
+<span>/</span>
+<span>PRODUCTION INCIDENTS &amp; ARCHITECTURE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-space-xs">
+        Technical Whitepapers &amp; Systems
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        복합 트랜잭션, 데이터베이스 락 경합, 실시간 분산 로깅 등 실제 마주한 시스템 한계를 극복한 엔지니어링 기록입니다.
+      </p>
+</div>
+<div class="w-full max-w-[880px] flex flex-col gap-space-2xl">
+<!-- CASE STUDY 001: FINFLOW -->
+<article class="bg-surface-container-lowest rounded-DEFAULT shadow-[0_2px_12px_rgba(0,0,0,0.04),0_16px_40px_rgba(0,0,0,0.03)] p-space-lg sm:p-space-2xl border border-surface-variant/40">
+<!-- Document Top Bar -->
+<div class="flex flex-wrap items-center justify-between pb-space-sm border-b border-surface-variant gap-space-xs font-label-mono-xs text-label-mono-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-bold text-secondary">PROJECT DOCUMENT / 001</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">DISTRIBUTED PAYMENT ENGINE</span>
+</div>
+<div class="text-outline">
+<span>PERIOD: 2025.04 — 2025.10</span>
+<span class="mx-1">•</span>
+<span class="text-on-surface font-medium">ROLE: LEAD BACKEND ENGINEER</span>
+</div>
+</div>
+<!-- Project Title -->
+<div class="mt-space-lg">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+            FinFlow — 대용량 트래픽 결제 및 정산 트랜잭션 플랫폼
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            순간 초당 요청량(TPS) 폭증 시 발생하는 재고 마이너스 및 중복 결제 결함을 원천 차단하고 결제 승인과 정산 프로세스를 디커플링한 분산 백엔드 플랫폼.
+          </p>
+</div>
+<!-- Problem / Solution Split Grid -->
+<div class="grid md:grid-cols-2 gap-space-md mt-space-lg">
+<!-- The Problem -->
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-error font-medium uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>THE ARCHITECTURAL BOTTLE-NECK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              선착순 할인 프로모션 시 <strong>1만 회 이상의 동시 결제 요청</strong>이 단일 RDBMS 인스턴스로 집중되며 Connection Pool 고갈 및 비관적 락(Pessimistic Lock)으로 인한 심각한 데드락(Deadlock)과 주문 결제 누락 발생.
+            </p>
+</div>
+<!-- The Solution -->
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-secondary font-medium uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>ENGINEERED RESOLUTION</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>Redisson 분산 락(Distributed Lock)</strong>을 채택하여 재고 차감 임계 구역의 락 점유 시간을 <strong>140ms에서 8ms</strong>로 단축. 결제 이후의 장시간 I/O 정산 로직은 <strong>Apache Kafka 이벤트</strong>로 분리하여 멱등성(Idempotency) 보장.
+            </p>
+</div>
+</div>
+<!-- Interactive Architecture Diagram Schematic -->
+<div class="mt-space-xl">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-mono-xs text-label-mono-xs uppercase tracking-wider text-on-surface-variant font-semibold">FIGURE 1.1 — EVENT-DRIVEN FLOW SCHEMATIC</span>
+<span class="font-label-mono-xs text-label-mono-xs text-secondary">ASCII / HIGH SIGNAL COMPONENT VIEW</span>
+</div>
+<div class="bg-primary text-on-primary p-space-md rounded-lg font-label-mono-xs text-label-mono-xs overflow-x-auto leading-relaxed shadow-inner">
+<pre class="text-slate-200">[ CLIENT HTTP REQ ] → [ NGINX L4/L7 LB ]
+                              ↓
+                  [ SPRING API GATEWAY ]
+                              ↓
+             +----------------+----------------+
+             | ORDER &amp; INVENTORY SERVICE        |
+             |  • Redisson Distributed Lock     | ←→ [ REDIS CLUSTER ]
+             |  • Atomic Inventory Validation  |      (TTL: 3000ms / Lease: 2000ms)
+             +----------------+----------------+
+                              ↓ (Emit Kafka Event: OrderCreatedEvent)
+                   [ KAFKA BROKER (PAYMENT_TOPIC) ]
+                              ↓ (Consumer Group: settlement-workers)
+             +----------------+----------------+
+             | SETTLEMENT &amp; PG WORKER SERVICE  |
+             |  • Idempotency Key Verification | ←→ [ MYSQL 8.0 CLUSTER ]
+             |  • External PG Gateway Async    |      (InnoDB Multi-AZ Read Replica)
+             +---------------------------------+
+</pre>
+</div>
+</div>
+<!-- Source Code Snippet: Distributed Lock -->
+<div class="mt-space-lg">
+<div class="flex justify-between items-center bg-surface-container px-space-md py-space-xs rounded-t-lg font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<span class="flex items-center gap-space-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[14px]">code</span>
+              OrderLockService.java • Redisson FairLock Implementation
+            </span>
+<span>JAVA 21 / SPRING BOOT 3</span>
+</div>
+<div class="bg-primary text-on-primary p-space-md rounded-b-lg font-label-mono-xs text-label-mono-xs overflow-x-auto">
+<code class="text-slate-300 block leading-5">
+<span class="text-slate-500">// Distributed Idempotent Lock Execution with Spring AOP Fallback</span>
+<span class="text-blue-400">@Transactional</span>
+<span class="text-purple-300">public</span> OrderResponse <span class="text-yellow-300">executeConcurrentOrder</span>(String itemSku, Long customerId, <span class="text-purple-300">int</span> quantity) {
+    RLock lock = redissonClient.getFairLock(<span class="text-emerald-300">"LOCK:ITEM:"</span> + itemSku);
+    <span class="text-purple-300">boolean</span> acquired = <span class="text-purple-300">false</span>;
+    <span class="text-purple-300">try</span> {
+        acquired = lock.tryLock(<span class="text-orange-300">3000</span>, <span class="text-orange-300">2000</span>, TimeUnit.MILLISECONDS);
+        <span class="text-purple-300">if</span> (!acquired) {
+            <span class="text-purple-300">throw new</span> ConcurrencyLockException(ErrorCode.INVENTORY_BUSY);
+        }
+        <span class="text-slate-500">// 1. Atomic decrement in memory &amp; DB consistency sync</span>
+        Inventory item = inventoryRepository.findBySkuWithLock(itemSku);
+        item.deduct(quantity);
+        
+        <span class="text-slate-500">// 2. Produce non-blocking event to Kafka cluster</span>
+        kafkaTemplate.send(PAYMENT_TOPIC, <span class="text-purple-300">new</span> OrderEvent(itemSku, customerId, quantity));
+        <span class="text-purple-300">return new</span> OrderResponse(OrderStatus.QUEUED, UUID.randomUUID());
+    } <span class="text-purple-300">finally</span> {
+        <span class="text-purple-300">if</span> (acquired &amp;&amp; lock.isHeldByCurrentThread()) {
+            lock.unlock();
+        }
+    }
+}
+            </code>
+</div>
+</div>
+<!-- Technical Retrospective Notes -->
+<div class="mt-space-lg p-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface">
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant uppercase font-semibold mb-1">
+            CRITICAL RETROSPECTIVE • DB DEADLOCK MITIGATION
+          </div>
+          트랜잭션 내부에서 외부 I/O(외부 PG 결제사 연동 통신)를 수행하던 기존 레거시 안티패턴을 감지하여 DB 트랜잭션 스코프에서 외부 API 호출을 완벽히 분리했습니다. 이를 통해 DB 커넥션 유지 시간을 평균 <strong>420ms에서 12ms</strong>로 97% 압축하였으며, 커넥션 풀 고갈 장애를 제로화했습니다.
+        </div>
+</article>
+<!-- CASE STUDY 002: LOGPULSE -->
+<article class="bg-surface-container-lowest rounded-DEFAULT shadow-[0_2px_12px_rgba(0,0,0,0.04),0_16px_40px_rgba(0,0,0,0.03)] p-space-lg sm:p-space-2xl border border-surface-variant/40">
+<!-- Document Top Bar -->
+<div class="flex flex-wrap items-center justify-between pb-space-sm border-b border-surface-variant gap-space-xs font-label-mono-xs text-label-mono-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-bold text-secondary">PROJECT DOCUMENT / 002</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">OBSERVABILITY ENGINE</span>
+</div>
+<div class="text-outline">
+<span>PERIOD: 2024.08 — 2024.12</span>
+<span class="mx-1">•</span>
+<span class="text-on-surface font-medium">ROLE: BACKEND &amp; PIPELINE ARCHITECT</span>
+</div>
+</div>
+<!-- Project Title -->
+<div class="mt-space-lg">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+            LogPulse — 분산 실시간 로깅 및 장애 모니터링 시스템
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            분산 마이크로서비스 환경에서 수집되는 하루 8,000만 건의 트랜잭션 로그를 유실 없이 집계하고, 임계치 초과 에러를 3초 이내에 운영팀에 전파하는 분석 파이프라인.
+          </p>
+</div>
+<!-- Core Stack Badges -->
+<div class="flex flex-wrap gap-2 mt-space-md">
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">SPRING CLOUD GATEWAY</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">KAFKA LOG CONSUMER</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">ELASTICSEARCH 8.x</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">GRAFANA DASHBOARD</span>
+<span class="font-label-mono-xs text-label-mono-xs bg-surface-container px-2 py-0.5 rounded text-on-surface font-medium">SLACK WEBHOOK ALERT</span>
+</div>
+<div class="grid md:grid-cols-3 gap-space-md mt-space-lg">
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="font-label-mono-xs text-label-mono-xs text-secondary font-medium uppercase mb-1">AGGREGATION CAPACITY</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">80M+ / DAY</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">트랜잭션 추적 번호(TraceId/SpanId)를 통한 전사 분산 추적 완비</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="font-label-mono-xs text-label-mono-xs text-secondary font-medium uppercase mb-1">INCIDENT DETECTION</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">&lt; 3 SECONDS</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">HTTP 5xx 및 예외 스택트레이스 즉시 알림 체계 구축</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="font-label-mono-xs text-label-mono-xs text-secondary font-medium uppercase mb-1">STORAGE OPTIMIZATION</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold">-45% DISK USAGE</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">인덱스 롤오버 및 ILM(Index Lifecycle Management) 압축 적용</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 04: ENGINEERING ACHIEVEMENTS (TECHNICAL METRICS) -->
+<section class="relative z-10 w-full py-space-2xl flex flex-col items-center" id="metrics">
+<div class="w-full max-w-[880px] mb-space-xl">
+<div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-secondary font-semibold uppercase tracking-widest">
+<span>QUANTITATIVE METRICS</span>
+<span>/</span>
+<span>EMPIRICAL BENCHMARKS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight mt-space-xs">
+        Engineering Impact &amp; Optimization
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        추상적인 주장이 아닌, JMeter 스트레스 테스트 및 프로덕션 APM 수치로 검증된 성능 개선 데이터입니다.
+      </p>
+</div>
+<!-- Metrics Bento Card Mosaic -->
+<div class="w-full max-w-[880px] grid md:grid-cols-3 gap-space-md">
+<!-- Metric Card 1: API Latency 90% Drop -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_2px_8px_rgba(0,0,0,0.03)] border border-surface-variant/40 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-mono-xs text-label-mono-xs mb-space-sm">
+<span>METRIC #01</span>
+<span class="text-secondary font-bold">-90.0% LATENCY</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight">
+            150ms → <span class="text-secondary">15ms</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+            복합 집계 쿼리를 <strong>QueryDSL 커버링 인덱스(Covering Index)</strong>로 리팩토링하고 Redis 2차 로컬 캐시를 접목하여 단일 엔드포인트 응답 속도 극대화.
+          </p>
+</div>
+<!-- Differential Comparison Bar Graphic -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex flex-col gap-1.5 font-label-mono-xs text-label-mono-xs">
+<div class="flex justify-between text-on-surface-variant">
+<span>BEFORE (NO CACHE)</span>
+<span>150ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-outline w-full"></div>
+</div>
+<div class="flex justify-between text-secondary font-medium mt-1">
+<span>OPTIMIZED (REDIS L2)</span>
+<span>15ms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-secondary w-[10%]"></div>
+</div>
+</div>
+</div>
+<!-- Metric Card 2: Peak Concurrency TPS -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_2px_8px_rgba(0,0,0,0.03)] border border-surface-variant/40 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-mono-xs text-label-mono-xs mb-space-sm">
+<span>METRIC #02</span>
+<span class="text-secondary font-bold">ZERO FAULTS</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight">
+            12,000 <span class="text-headline-md text-on-surface-variant font-normal">TPS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+            Apache JMeter 30,000 가상 유저(VUser) 스트레스 테스트 수행 결과, Redisson 락 풀링 및 Kafka 버퍼링으로 <strong>에러율 0.00%</strong> 무중단 트랜잭션 달성.
+          </p>
+</div>
+<!-- Inline SVG Sparkline / Throughput Curve -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container">
+<div class="flex justify-between text-on-surface-variant font-label-mono-xs text-label-mono-xs mb-1">
+<span>THROUGHPUT STABILITY</span>
+<span class="text-secondary font-semibold">30K VUSERS</span>
+</div>
+<svg class="w-full h-10 text-secondary" fill="none" stroke="currentColor" viewbox="0 0 200 40">
+<path d="M 0 35 Q 30 35, 50 25 T 100 12 T 150 10 T 200 10" stroke-linecap="round" stroke-width="2"></path>
+<path d="M 0 35 Q 30 35, 50 25 T 100 12 T 150 10 T 200 10 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Metric Card 3: DB CPU Stabilization -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-[0_2px_8px_rgba(0,0,0,0.03)] border border-surface-variant/40 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-mono-xs text-label-mono-xs mb-space-sm">
+<span>METRIC #03</span>
+<span class="text-secondary font-bold">-56.0% CPU LOAD</span>
+</div>
+<div class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight">
+            78% → <span class="text-secondary">22%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">
+            HikariCP 커넥션 풀 누수 분석 및 슬로우 쿼리(Execution Time &gt; 1000ms) 실행계획 전수 재설계를 통한 RDBMS 부하의 획기적 완화.
+          </p>
+</div>
+<!-- Minimal Donut Progress Graphic -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant">
+<span>CPU HEADROOM:</span><br/>
+<span class="text-on-surface font-semibold text-body-md">78% SURPLUS</span>
+</div>
+<div class="relative w-12 h-12">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="22, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-label-mono-xs text-label-mono-xs font-semibold text-on-surface">22%</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: EXPERIENCE & EDUCATION & CERTIFICATIONS -->
+<section class="relative z-10 w-full py-space-2xl flex flex-col items-center" id="experience">
+<div class="w-full max-w-[880px] bg-surface-container-lowest rounded-DEFAULT p-space-lg sm:p-space-2xl shadow-[0_2px_12px_rgba(0,0,0,0.04)] border border-surface-variant/40">
+<!-- Section Title -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-variant mb-space-xl font-label-mono-xs text-label-mono-xs">
+<div class="flex items-center gap-space-xs text-secondary font-semibold uppercase tracking-widest">
+<span>ACADEMIC BACKGROUND &amp; OFFICIAL CREDENTIALS</span>
+</div>
+<div class="text-outline uppercase">OFFICIAL DOSSIER #ACAD-2026</div>
+</div>
+<!-- Timeline Table -->
+<div class="flex flex-col gap-space-xl">
+<!-- Education Entry -->
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-md pb-space-lg border-b border-surface-container">
+<div class="w-44 font-label-mono-xs text-label-mono-xs text-secondary font-semibold">
+            2020.03 — 2026.02
+          </div>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+              동아대학교 (Dong-A University)
+            </h4>
+<div class="text-on-surface font-body-md mt-0.5">컴퓨터공학과 (Computer Science &amp; Engineering)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              학점(GPA): <strong>3.9 / 4.5</strong> • 자료구조, 운영체제(OS), 컴퓨터 네트워크, 데이터베이스 시스템 심화 이수
+            </p>
+</div>
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant px-2 py-1 bg-surface-container-low rounded">
+            BACHELOR'S DEGREE
+          </div>
+</div>
+<!-- Awards Entry -->
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-md pb-space-lg border-b border-surface-container">
+<div class="w-44 font-label-mono-xs text-label-mono-xs text-secondary font-semibold">
+            2026.01
+          </div>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">
+              2026 전국 대학생 SW 융합 공모전 — 대상 (Grand Prize)
+            </h4>
+<div class="text-on-surface font-body-md mt-0.5">국회 교육위원장상 수상</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              실시간 대용량 트랜잭션 격리 분산 결제 아키텍처 FinFlow를 출품하여 심사위원단 만장일치 최고 기술상 수상
+            </p>
+</div>
+<div class="font-label-mono-xs text-label-mono-xs text-secondary px-2 py-1 bg-secondary-fixed rounded font-semibold">
+            GRAND PRIZE
+          </div>
+</div>
+<!-- Certifications Entry -->
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-md">
+<div class="w-44 font-label-mono-xs text-label-mono-xs text-secondary font-semibold">
+            CREDENTIALS
+          </div>
+<div class="flex-1 grid sm:grid-cols-2 gap-space-md">
+<div class="p-space-sm bg-surface-container-low rounded">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">정보처리기사</div>
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant mt-1">한국산업인력공단 (HRD Korea) • 2025</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">소프트웨어 공학, 시스템 아키텍처, 데이터베이스 실무 검증</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">SQLD (SQL 개발자)</div>
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant mt-1">한국데이터산업진흥원 (K-DATA) • 2024</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">관계형 모델링, 옵티마이저 원리 및 쿼리 플랜 최적화 자격</p>
+</div>
+</div>
+<div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant px-2 py-1 bg-surface-container-low rounded">
+            GOV CERTIFIED
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 06: FINAL CLOSING CARD (CLOSING CONVERGENCE) -->
+<section class="relative z-10 w-full py-space-3xl flex flex-col items-center" id="contact">
+<div class="w-full max-w-[680px] flex flex-col items-center text-center mb-space-lg">
+<div class="font-label-mono-xs text-label-mono-xs text-secondary uppercase tracking-widest font-semibold mb-space-xs">
+        CLOSING CONVERGENCE • GET IN TOUCH
+      </div>
+<h2 class="font-display text-display sm:text-[3.25rem] text-on-surface font-semibold tracking-tight">
+        Let’s Build Something Resilient.
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-md">
+        높은 처리량과 철저한 안정성이 요구되는 환경에서 새로운 가치를 만들어낼 준비가 되어 있습니다.
+      </p>
+</div>
+<!-- Closing Minimal Business Card Chassis -->
+<div class="w-full max-w-[680px] bg-surface-container-lowest rounded-DEFAULT shadow-[0_20px_50px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] p-space-lg sm:p-space-xl border border-surface-variant/40 flex flex-col justify-between gap-space-xl relative overflow-hidden">
+<!-- Card Top -->
+<div class="flex justify-between items-start">
+<div class="text-left">
+<div class="font-label-mono-xs text-label-mono-xs text-secondary tracking-widest uppercase font-semibold">
+            BACKEND ENGINEER • SEOUL, KR
+          </div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">
+            권진호 (KWON JINHO)
+          </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Distributed Systems / High-Throughput Architecture
+          </div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+</div>
+<!-- Contact Interaction Cluster -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-variant">
+<div class="flex items-center gap-space-md">
+<a class="px-space-lg py-space-sm bg-primary text-on-primary rounded font-label-mono-xs text-label-mono-xs font-semibold hover:bg-neutral-800 transition-colors flex items-center gap-space-xs" href="mailto:jinho.kwon.dev@gmail.com">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>SEND EMAIL INQUIRY</span>
+</a>
+<a class="px-space-md py-space-sm bg-surface-container text-on-surface rounded font-label-mono-xs text-label-mono-xs font-medium hover:bg-surface-variant transition-colors flex items-center gap-1" href="https://github.com" rel="noreferrer" target="_blank">
+<span>GITHUB</span>
+<span class="material-symbols-outlined text-[13px]">north_east</span>
+</a>
+</div>
+<button class="group flex items-center gap-1 text-on-surface-variant hover:text-secondary font-label-mono-xs text-label-mono-xs transition-colors" onclick="window.print()">
+<span>EXPORT RESUME PDF</span>
+<span class="material-symbols-outlined text-[14px] group-hover:translate-y-0.5 transition-transform">download</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- INTERACTIVE SCRIPTS: 3D CARD TILT & SMOOTH SCROLL -->
+<script>
+  (function initCardMicroInteractions() {
+    const cardContainer = document.getElementById('card-tilt-container');
+    const card = document.getElementById('interactive-card');
+    const sheen = document.getElementById('card-sheen');
+
+    if (!cardContainer || !card) return;
+
+    let bounds;
+
+    function updateBounds() {
+      bounds = cardContainer.getBoundingClientRect();
+    }
+
+    cardContainer.addEventListener('mouseenter', () => {
+      updateBounds();
+      if (sheen) sheen.style.opacity = '0.35';
+    });
+
+    cardContainer.addEventListener('mousemove', (e) => {
+      if (!bounds) updateBounds();
+      const mouseX = e.clientX - bounds.left;
+      const mouseY = e.clientY - bounds.top;
+      
+      const xPct = mouseX / bounds.width - 0.5;
+      const yPct = mouseY / bounds.height - 0.5;
+
+      const rotateY = xPct * 14; 
+      const rotateX = -yPct * 14; 
+
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+
+      if (sheen) {
+        sheen.style.background = `radial-gradient(circle at ${mouseX}px ${mouseY}px, rgba(255,255,255,0.7) 0%, transparent 60%)`;
+      }
+    });
+
+    cardContainer.addEventListener('mouseleave', () => {
+      card.style.transform = 'rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      if (sheen) sheen.style.opacity = '0';
+    });
+
+    window.addEventListener('resize', updateBounds);
+  })();
+</script></div></main><footer class="w-full bg-surface-container-lowest mt-space-3xl py-space-xl border-t border-surface-variant"><div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs font-label-mono-xs text-label-mono-xs text-on-surface-variant"><span>SYSTEM CHASSIS</span><span class="text-outline-variant">•</span><span>ARCHITECT KWON JINHO</span><span class="text-outline-variant">•</span><span>SEOUL, KR</span></div><div class="font-label-mono-xs text-label-mono-xs text-on-surface-variant tracking-wider uppercase">© 2026 KWON JINHO. HIGH-THROUGHPUT DISTRIBUTED SYSTEMS.</div></div></footer></body></html>
